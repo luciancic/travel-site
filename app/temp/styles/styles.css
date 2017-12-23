@@ -512,7 +512,7 @@ img {
     font-weight: 100;
     font-size: 1.875rem;
     color: #fff;
-    width: 30rem;
+    max-width: 30rem;
     margin-left: auto;
     margin-right: auto;
     text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
