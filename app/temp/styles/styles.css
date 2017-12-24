@@ -573,19 +573,30 @@ img {
     max-width: 990px;
   }
 
+.wrapper--b-margin {
+    margin-bottom: 1.2rem;
+  }
+
+@media (min-width: 800px) {
+
+.wrapper--b-margin {
+      margin-bottom: 3.3rem
+  }
+  }
+
 .wrapper .wrapper {
     padding-left: 0;
     padding-right: 0;
   }
 
 .page-section {
-  padding: 1.2rem 0;
+  padding: 1.6rem 0;
 }
 
 @media (min-width: 800px) {
 
 .page-section {
-    padding: 3.1rem 0
+    padding: 4.5rem 0
 }
   }
 
@@ -667,8 +678,16 @@ img {
       width: 33.33%;
     }
 
+      .row__medium-4--larger {
+        width: 38%;
+      }
+
     .row__medium-8 {
       float: left;
       width: 66.66%;
     }
+
+      .row__medium-8--smaller {
+        width: 62%;
+      }
   }

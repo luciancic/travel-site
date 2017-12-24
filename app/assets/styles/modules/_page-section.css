@@ -1,8 +1,8 @@
 .page-section {
-  padding: 1.2rem 0;
+  padding: 1.6rem 0;
 
   @mixin atMedium {
-    padding: 3.1rem 0;
+    padding: 4.5rem 0;
   }
 
   &--blue {
