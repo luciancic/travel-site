@@ -557,4 +557,77 @@ img {
 .wrapper {
   padding-left: 18px;
   padding-right: 18px;
+  max-width: 990px;
+  margin-left: auto;
+  margin-right: auto;
 }
+
+.page-section {
+  padding: 1.2rem 0;
+}
+
+@media (min-width: 800px) {
+
+.page-section {
+    padding: 3.1rem 0
+}
+  }
+
+.page-section--blue {
+    background-color: #2f5572;
+    color: #fff;
+  }
+
+.headline {
+  font-weight: 300;
+  font-size: 1.9rem;
+  color: #2f5572;
+}
+
+@media (min-width: 530px) {
+
+.headline {
+    font-size: 2.8rem
+}
+  }
+
+.headline--centered {
+    text-align: center;
+  }
+
+.headline--small {
+    font-size: 1.2rem;
+  }
+
+@media (min-width: 530px) {
+
+.headline--small {
+      font-size: 1.75rem
+  }
+  }
+
+.headline--thin {
+    font-weight: 100;
+  }
+
+.headline--narrow {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.headline--orange {
+    color: #d59541;
+  }
+
+.headline--b-margin-small {
+    margin-bottom: .5em;
+  }
+
+.headline--b-margin-large {
+    margin-bottom: 1.6em;
+  }
+
+.headline strong {
+    font-weight: 400;
+  }
