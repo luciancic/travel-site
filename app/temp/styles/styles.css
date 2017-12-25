@@ -811,3 +811,30 @@ a {
       font-size: 1.125rem
   }
   }
+
+.footer {
+  background-color: #2f5572;
+  color: white;
+  padding: 0.1rem 56px;
+  text-align: center;
+}
+
+.footer__text {
+    font-size: 1.2rem;
+    font-weight: 300;
+  }
+
+@media (min-width: 800px) {
+
+.footer__text {
+      margin-top: 0
+      /* float: left; */
+  }
+  }
+
+.footer__btn {
+    position: relative;
+    font-weight: 400;
+    margin-left: 3rem;
+    margin-top: 1rem;
+  }
