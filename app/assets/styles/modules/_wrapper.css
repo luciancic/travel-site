@@ -7,7 +7,7 @@
   overflow: hidden;
 
   &--narrow {
-    max-width: 990px;
+    max-width: 960px;
   }
 
   &--b-margin {
