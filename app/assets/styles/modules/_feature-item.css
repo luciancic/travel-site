@@ -1,0 +1,73 @@
+.feature-item {
+  position: relative;
+  margin-bottom: 3.6rem;
+
+  @mixin atSmall {
+    padding-left: 96px;
+  }
+
+  &__section-title {
+    font-weight: 300;
+    font-size: 3.2rem;
+    text-align: center;
+    margin-top: .3rem;
+
+    strong {
+      font-weight: 500;
+    }
+
+    @mixin atSmall {
+      display: inline;
+      position: relative;
+      bottom: 10px;
+      margin-left: 1.2rem;
+    }
+  }
+
+  &__icon {
+    position: relative;
+    left: 50%;
+    margin-left: -32px;
+    margin-top: 1.25rem;
+
+    @mixin atSmall {
+      position: absolute;
+      left: 0;
+      margin-left: 0;
+      margin-top: 0;
+    }
+  }
+
+  &__section-title-icon {
+    left: 0;
+    margin-left: 0;
+
+    @mixin atSmall {
+      display: inline;
+      position: relative;
+    }
+  }
+
+  &__title {
+    font-size: 1.75rem;
+    font-weight: 400;
+    margin-bottom: .75rem;
+    margin-top: 0.55rem;
+    text-align: center;
+
+    @mixin atSmall {
+      text-align: left;
+    }
+  }
+
+  &__text {
+    font-weight: 300;
+    font-size: 1.25rem;
+    text-align: center;
+
+    @mixin atSmall {
+      text-align: left;
+      font-size: 1.125rem;
+    }
+  }
+}

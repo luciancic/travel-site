@@ -490,7 +490,7 @@ a {
 .large-hero__title {
     font-weight: 300;
     color: #2f5572;
-    font-size: 3rem;
+    font-size: 3.2rem;
     margin: 0;
   }
 
@@ -504,7 +504,7 @@ a {
 .large-hero__subtitle {
     font-weight: 300;
     color: #2f5572;
-    font-size: 2rem;
+    font-size: 2.1rem;
     margin: 0;
   }
 
@@ -565,7 +565,7 @@ a {
 }
 
 .wrapper--narrow {
-    max-width: 990px;
+    max-width: 960px;
   }
 
 .wrapper--b-margin {
@@ -690,6 +690,11 @@ a {
         width: 38%;
       }
 
+    .row__medium-6 {
+      float: left;
+      width: 50%;
+    }
+
     .row__medium-8 {
       float: left;
       width: 66.66%;
@@ -703,14 +708,8 @@ a {
 .generic-content-container p {
     line-height: 1.65;
     font-weight: 300;
-    margin: 1.8rem 0;
-  }
-
-@media (min-width: 530px) {
-
-.generic-content-container p {
-      font-size: 1.125rem
-  }
+    font-size: 1.125rem;
+    margin: 0 0 1.8rem 0;
   }
 
 .generic-content-container p a {
@@ -719,4 +718,96 @@ a {
 
 .generic-content-container p strong {
     font-weight: 500;
+  }
+
+.feature-item {
+  position: relative;
+  margin-bottom: 3.6rem;
+}
+
+@media (min-width: 530px) {
+
+.feature-item {
+    padding-left: 96px
+}
+  }
+
+.feature-item__section-title {
+    font-weight: 300;
+    font-size: 3.2rem;
+    text-align: center;
+    margin-top: .3rem;
+  }
+
+.feature-item__section-title strong {
+      font-weight: 500;
+    }
+
+@media (min-width: 530px) {
+
+.feature-item__section-title {
+      display: inline;
+      position: relative;
+      bottom: 10px;
+      margin-left: 1.2rem
+  }
+  }
+
+.feature-item__icon {
+    position: relative;
+    left: 50%;
+    margin-left: -32px;
+    margin-top: 1.25rem;
+  }
+
+@media (min-width: 530px) {
+
+.feature-item__icon {
+      position: absolute;
+      left: 0;
+      margin-left: 0;
+      margin-top: 0
+  }
+  }
+
+.feature-item__section-title-icon {
+    left: 0;
+    margin-left: 0;
+  }
+
+@media (min-width: 530px) {
+
+.feature-item__section-title-icon {
+      display: inline;
+      position: relative
+  }
+  }
+
+.feature-item__title {
+    font-size: 1.75rem;
+    font-weight: 400;
+    margin-bottom: .75rem;
+    margin-top: 0.55rem;
+    text-align: center;
+  }
+
+@media (min-width: 530px) {
+
+.feature-item__title {
+      text-align: left
+  }
+  }
+
+.feature-item__text {
+    font-weight: 300;
+    font-size: 1.25rem;
+    text-align: center;
+  }
+
+@media (min-width: 530px) {
+
+.feature-item__text {
+      text-align: left;
+      font-size: 1.125rem
+  }
   }
