@@ -1,12 +1,20 @@
 .row {
 
 
-  &--gutters > div{
+  &--gutters > div {
     padding-right: 65px;
+  }
+
+  &--gutters-small > div {
+    padding-right: 45px;
   }
 
   &--gutters {
     margin-right: -65px;
+  }
+
+  &--gutters-small {
+    margin-right: -45px;
   }
 
   &__b-margin-until-medium {
@@ -42,6 +50,24 @@
       &--smaller {
         width: 62%;
       }
+    }
+  }
+
+  @mixin atLarge {
+    &__large-4 {
+      float: left;
+      width: 33.33%;
+    }
+  }
+
+  &--equal-height-at-large {
+    @mixin atLarge {
+      display: flex;
+    }
+
+    & > div {
+      float: none;
+      display: flex;
     }
   }
 }
