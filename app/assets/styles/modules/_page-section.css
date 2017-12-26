@@ -15,8 +15,16 @@
 
     @mixin atLarge {
       background: url('/assets/images/testimonials-bg.jpg') top center no-repeat;
-      background-color: lightpink;
+      background-color: #e0e6ef;
       background-size: cover;
+    }
+  }
+
+  &--no-b-padding-until-small {
+    padding-bottom: 0;
+
+    @mixin atSmall {
+      padding-bottom: 1.6rem;
     }
   }
 }

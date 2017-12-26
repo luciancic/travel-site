@@ -1,12 +1,16 @@
 .testimonial {
   background-color: rgba(255, 255, 255, 0.75);
   text-align: center;
-  padding: 0 1.8rem 1px 1.8rem;
-  margin-top: 80px;
+  padding: 0 18px 1px 18px;
+  margin-top: 8rem;
+
+  @mixin atSmall {
+    padding: 0 1.8rem 1px 1.8rem;
+  }
 
   &__top {
     text-align: center;
-    margin-bottom: 3rem;
+    padding: 0 16px;
   }
 
   &__top-icon {
