@@ -2,7 +2,7 @@
   .icon--{{base}} {
     width: {{width.outer}}px;
     height: {{height.outer}}px;
-    background-image: url('/temp/sprites/css/{{{sprite}}}');
+    background-image: url('/temp/sprite/css/{{{sprite}}}');
     background-position: {{position.relative.xy}};
   }
 {{/shapes}}
