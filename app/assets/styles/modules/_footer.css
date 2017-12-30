@@ -1,7 +1,7 @@
 .footer {
   background-color: $mainBlue;
   color: white;
-  padding: 0.1rem 56px;
+  padding: 0.1rem 26px;
   text-align: center;
 
   &__text {

@@ -945,7 +945,7 @@ a {
 .footer {
   background-color: #2f5572;
   color: white;
-  padding: 0.1rem 56px;
+  padding: 0.1rem 26px;
   text-align: center;
 }
 
@@ -1060,3 +1060,37 @@ a {
     background-image: url('/temp/sprite/css/svg/sprite.css-69f19c2e.svg');
     background-position: 36.69752421959096% 45.792307692307695%;
   }
+
+.header {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  background-color: rgba(47,85,114, 0.3);
+}
+
+.header__logo {
+    position: absolute;
+    top: 0;
+    padding: 25px 36px;
+    background-color: #2f5572;
+  }
+
+.header__btn {
+    float: right;
+    margin: 1rem 0;
+  }
+
+.header__nav {
+    float: right;
+  }
+
+.header__nav li {
+      float: left;
+      padding: .78rem 1.6rem 0 0;
+      list-style: none;
+    }
+
+.header__nav li a {
+        text-decoration: none;
+        color: #fff;
+      }
