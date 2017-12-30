@@ -20,8 +20,10 @@ gulp.task('createSprite', function () {
     .pipe(gulp.dest('./app/temp/sprite/'));
 });
 
-gulp.task('copySpriteCSS', function () {
+gulp.task('copySpriteCSS', ['createSprite'], function () {
   return gulp.src('./app/temp/sprite/css/*.css')
     .pipe(rename('_sprite.css'))
     .pipe(gulp.dest('./app/assets/styles/modules'));
 })
+
+gulp.task('sprite', ['createSprite', 'copySpriteCSS']);

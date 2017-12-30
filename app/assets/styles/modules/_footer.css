@@ -8,16 +8,21 @@
     font-size: 1.2rem;
     font-weight: 300;
 
-    @mixin atMedium {
-      margin-top: 0;
+    @mixin atSmall {
+      margin-top: 1rem;
       /* float: left; */
     }
   }
 
   &__btn {
-    position: relative;
+    width: 10rem;
     font-weight: 400;
-    margin-left: 3rem;
-    margin-top: 1rem;
+    display: block;
+    margin: 1rem auto 0 auto;
+
+    @mixin atLarge {
+      display: inline-block;
+      margin: 0 0 0 3rem;
+    }
   }
 }

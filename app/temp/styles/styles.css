@@ -954,19 +954,27 @@ a {
     font-weight: 300;
   }
 
-@media (min-width: 800px) {
+@media (min-width: 530px) {
 
 .footer__text {
-      margin-top: 0
+      margin-top: 1rem
       /* float: left; */
   }
   }
 
 .footer__btn {
-    position: relative;
+    width: 10rem;
     font-weight: 400;
-    margin-left: 3rem;
-    margin-top: 1rem;
+    display: block;
+    margin: 1rem auto 0 auto;
+  }
+
+@media (min-width: 1080px) {
+
+.footer__btn {
+      display: inline-block;
+      margin: 0 0 0 3rem
+  }
   }
 
 .icon--clear-view-escapes {
