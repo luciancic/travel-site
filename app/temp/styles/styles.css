@@ -476,13 +476,20 @@ a {
 
 .large-hero__text-content {
     position: absolute;
+    padding-top: 88px;
     top: 50%;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
     left: 0;
     width: 100%;
-    padding-top: 68px;
     text-align: center;
+  }
+
+@media (min-width: 800px) {
+
+.large-hero__text-content {
+      padding-top: 68px
+  }
   }
 
 .large-hero__image {
@@ -1082,9 +1089,23 @@ a {
 
 .header__logo {
     position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%) scale(.8);
+            transform: translateX(-50%) scale(.8);
+    -webkit-transform-origin: 50% 0;
+            transform-origin: 50% 0;
     top: 0;
     padding: 25px 36px;
     background-color: #2f5572;
+  }
+
+@media (min-width: 800px) {
+
+.header__logo {
+      left: auto;
+      -webkit-transform: translateX(0) scale(1);
+              transform: translateX(0) scale(1)
+  }
   }
 
 .header__btn {
