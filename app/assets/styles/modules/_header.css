@@ -4,6 +4,14 @@
   z-index: 1;
   background-color: $transparentBlue;
 
+  &__menu-content {
+    display: none;
+
+    @mixin atMedium {
+      display: block;
+    }
+  }
+
   &__logo {
     position: absolute;
     top: 0;
