@@ -1087,6 +1087,7 @@ a {
     -webkit-transition: all .4s ease-out;
     transition: all .4s ease-out;
     text-align: center;
+    margin: 0 -18px;
     position: relative;
     z-index: -1;
   }
