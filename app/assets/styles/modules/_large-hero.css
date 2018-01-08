@@ -4,7 +4,7 @@
 
   &__text-content {
     position: absolute;
-    padding-top: 88px;
+    padding-top: 98px;
     top: 50%;
     transform: translateY(-50%);
     left: 0;
@@ -12,7 +12,7 @@
     text-align: center;
 
     @mixin atMedium {
-      padding-top: 68px;
+      padding-top: 78px;
     }
   }
 
@@ -23,28 +23,28 @@
   &__title {
     font-weight: 300;
     color: $mainBlue;
-    font-size: 3.2rem;
+    font-size: 3rem;
     margin: 0;
 
     @mixin atSmall {
-      font-size: 4.8rem;
+      font-size: 4.5rem;
     }
   }
 
   &__subtitle {
     font-weight: 300;
     color: $mainBlue;
-    font-size: 2.1rem;
+    font-size: 2rem;
     margin: 0;
 
     @mixin atSmall {
-      font-size: 2.9rem;
+      font-size: 2.7rem;
     }
   }
 
   &__description {
     font-weight: 100;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: #fff;
     max-width: 30rem;
     margin-left: auto;
@@ -52,7 +52,7 @@
     text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
 
     @mixin atSmall {
-      font-size: 1.875rem;
+      font-size: 1.7rem;
     }
   }
 }

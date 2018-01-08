@@ -476,7 +476,7 @@ a {
 
 .large-hero__text-content {
     position: absolute;
-    padding-top: 88px;
+    padding-top: 98px;
     top: 50%;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
@@ -488,7 +488,7 @@ a {
 @media (min-width: 800px) {
 
 .large-hero__text-content {
-      padding-top: 68px
+      padding-top: 78px
   }
   }
 
@@ -499,34 +499,34 @@ a {
 .large-hero__title {
     font-weight: 300;
     color: #2f5572;
-    font-size: 3.2rem;
+    font-size: 3rem;
     margin: 0;
   }
 
 @media (min-width: 530px) {
 
 .large-hero__title {
-      font-size: 4.8rem
+      font-size: 4.5rem
   }
   }
 
 .large-hero__subtitle {
     font-weight: 300;
     color: #2f5572;
-    font-size: 2.1rem;
+    font-size: 2rem;
     margin: 0;
   }
 
 @media (min-width: 530px) {
 
 .large-hero__subtitle {
-      font-size: 2.9rem
+      font-size: 2.7rem
   }
   }
 
 .large-hero__description {
     font-weight: 100;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: #fff;
     max-width: 30rem;
     margin-left: auto;
@@ -537,7 +537,7 @@ a {
 @media (min-width: 530px) {
 
 .large-hero__description {
-      font-size: 1.875rem
+      font-size: 1.7rem
   }
   }
 
