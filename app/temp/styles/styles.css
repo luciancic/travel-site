@@ -1178,7 +1178,7 @@ a {
 
 .header__nav ul {
       margin: 0;
-      padding: 16px 0;
+      padding: 16px;
     }
 
 .header__nav li {
@@ -1186,6 +1186,7 @@ a {
       list-style: none;
       display: inline-block;
       font-size: .9rem;
+      margin-bottom: 12px;
     }
 
 @media (min-width: 800px) {
@@ -1199,6 +1200,7 @@ a {
 
 .header__nav li:last-child {
       padding-right: 0;
+      margin-bottom: 0;
     }
 
 @media (min-width: 800px) {
