@@ -1114,6 +1114,8 @@ a {
     -webkit-transition: all .4s ease-out;
     transition: all .4s ease-out;
     text-align: center;
+    position: relative;
+    z-index: -1;
   }
 
 .header__menu-content--visible {
@@ -1121,6 +1123,7 @@ a {
       background-color: rgba(47,85,114, 0.36);
       margin: 0 -18px;
       padding-top: 89px;
+      z-index: 1;
     }
 
 @media (min-width: 800px) {
@@ -1128,7 +1131,8 @@ a {
 .header__menu-content {
       opacity: 1;
       margin: 0;
-      padding-top: 0
+      padding-top: 0;
+      z-index: 1
   }
   }
 
