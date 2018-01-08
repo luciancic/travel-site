@@ -89,8 +89,19 @@ var MobileMenu = function MobileMenu() {
   this.menuIcon.onmouseup = function () {
     var menuContent = document.getElementById('header__menu-content');
     var visibleClass = 'header__menu-content--visible';
-
     utils.toggleClass(menuContent, visibleClass);
+
+    var menuIconTop = document.getElementsByClassName('header__menu-icon__top')[0];
+    var xClassTop = 'header__menu-icon__top--x';
+    utils.toggleClass(menuIconTop, xClassTop);
+
+    var menuIconMiddle = document.getElementsByClassName('header__menu-icon__middle')[0];
+    var xClassMiddle = 'header__menu-icon__middle--x';
+    utils.toggleClass(menuIconMiddle, xClassMiddle);
+
+    var menuIconBottom = document.getElementsByClassName('header__menu-icon__bottom')[0];
+    var xClassBottom = 'header__menu-icon__bottom--x';
+    utils.toggleClass(menuIconBottom, xClassBottom);
   };
 };
 

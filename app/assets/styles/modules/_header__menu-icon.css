@@ -7,24 +7,21 @@
   right: 18px;
   z-index: 2;
 
-  @mixin atSmall {
-    height: 29px;
-    width: 32px;
-    margin: 2rem 1rem;
-  }
-
   @mixin atMedium {
     display: none;
   }
 
   &__top {
     height: 2px;
+    width: 24px;
     margin-bottom: 8px;
     background-color: #fff;
+    transition: all .3s ease-out;
 
-    @mixin atSmall {
-      height: 3px;
-      margin-bottom: 11px;
+    &--x {
+      width: 28px;
+      transform: rotate(45deg);
+      transform-origin: left;
     }
   }
 
@@ -32,19 +29,22 @@
     height: 2px;
     margin-bottom: 8px;
     background-color: #fff;
+    transition: all .3s ease-out;
 
-    @mixin atSmall {
-      height: 3px;
-      margin-bottom: 11px;
+    &--x {
+      background-color: transparent;
     }
   }
 
   &__bottom {
     height: 2px;
     background-color: #fff;
+    transition: all .3s ease-out;
 
-    @mixin atSmall {
-      height: 3px;
+    &--x {
+      width: 28px;
+      transform: rotate(-45deg);
+      transform-origin: left;
     }
   }
 }
