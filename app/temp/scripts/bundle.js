@@ -72,6 +72,8 @@
 
 var MobileMenu = __webpack_require__(1);
 
+var mobileMenu = new MobileMenu();
+
 /***/ }),
 /* 1 */
 /***/ (function(module, exports, __webpack_require__) {
@@ -79,7 +81,21 @@ var MobileMenu = __webpack_require__(1);
 "use strict";
 
 
-var MobileMenu = function MobileMenu() {};
+var MobileMenu = function MobileMenu() {
+  this.menuIcon = document.getElementById('header__menu-icon');
+
+  // Wire up event to show/hide menu content on mobile.
+  this.menuIcon.onmouseup = function () {
+    var menuContent = document.getElementById('header__menu-content');
+    var visibleClass = 'header__menu-content--visible';
+
+    if (menuContent.classList.contains(visibleClass)) {
+      menuContent.classList.remove(visibleClass);
+    } else {
+      menuContent.classList.add(visibleClass);
+    }
+  };
+};
 
 module.exports = MobileMenu;
 

@@ -18,7 +18,10 @@
 
   &__menu-content {
     display: none;
-
+    &--visible {
+      display: block;
+    }
+    
     @mixin atMedium {
       display: block;
     }
