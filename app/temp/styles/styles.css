@@ -1073,15 +1073,33 @@ a {
   position: absolute;
   width: 100%;
   z-index: 1;
-  background-color: rgba(47,85,114, 0.3);
 }
 
+@media (min-width: 800px) {
+
+.header {
+    background-color: rgba(47,85,114, 0.36)
+}
+  }
+
 .header__menu-icon {
-    height: 1.3rem;
-    width: 1.3rem;
+    height: 1.5rem;
+    width: 1.5rem;
     background-color: #fff;
     float: right;
-    margin: 1rem;
+    margin: 1.5rem .5rem;
+    position: absolute;
+    right: 18px;
+    z-index: 2;
+  }
+
+@media (min-width: 530px) {
+
+.header__menu-icon {
+      height: 2rem;
+      width: 2rem;
+      margin: 2rem 1rem
+  }
   }
 
 @media (min-width: 800px) {
@@ -1092,17 +1110,25 @@ a {
   }
 
 .header__menu-content {
-    display: none;
+    opacity: 0;
+    -webkit-transition: all .4s ease-out;
+    transition: all .4s ease-out;
+    text-align: center;
   }
 
 .header__menu-content--visible {
-      display: block;
+      opacity: 1;
+      background-color: rgba(47,85,114, 0.36);
+      margin: 0 -18px;
+      padding-top: 89px;
     }
 
 @media (min-width: 800px) {
 
 .header__menu-content {
-      display: block
+      opacity: 1;
+      margin: 0;
+      padding-top: 0
   }
   }
 
@@ -1128,21 +1154,66 @@ a {
   }
 
 .header__btn {
-    float: right;
-    margin: 1rem 0;
+    margin: 1rem 0 0 0;
   }
+
+@media (min-width: 800px) {
+
+.header__btn {
+      float: right;
+      margin: 1rem 0
+  }
+  }
+
+@media (min-width: 800px) {
 
 .header__nav {
-    float: right;
+      float: right
+  }
   }
 
-.header__nav li {
-      float: left;
-      padding: .78rem 1.6rem 0 0;
-      list-style: none;
+.header__nav ul {
+      margin: 0;
+      padding: 16px 0;
     }
 
-.header__nav li a {
-        text-decoration: none;
-        color: #fff;
-      }
+.header__nav li {
+      padding: .78rem 1rem 0 0;
+      list-style: none;
+      display: inline-block;
+      font-size: .9rem;
+    }
+
+@media (min-width: 800px) {
+
+.header__nav li {
+        float: left;
+        padding: .78rem 1.6rem 0 0;
+        font-size: 1rem
+    }
+  }
+
+.header__nav li:last-child {
+      padding-right: 0;
+    }
+
+@media (min-width: 800px) {
+
+.header__nav li:last-child {
+        padding-right: 1.6rem
+    }
+  }
+
+.header__nav a {
+      text-decoration: none;
+      color: #fff;
+      background-color: rgba(47,85,114, 0.78);
+      padding: .4rem;
+    }
+
+@media (min-width: 800px) {
+
+.header__nav a {
+        background-color: transparent
+    }
+  }

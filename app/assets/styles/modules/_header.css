@@ -2,14 +2,27 @@
   position: absolute;
   width: 100%;
   z-index: 1;
-  background-color: $transparentBlue;
+
+  @mixin atMedium {
+    background-color: $transparentBlue;
+  }
 
   &__menu-icon {
-    height: 1.3rem;
-    width: 1.3rem;
+    height: 1.5rem;
+    width: 1.5rem;
     background-color: #fff;
     float: right;
-    margin: 1rem;
+    margin: 1.5rem .5rem;
+    position: absolute;
+    right: 18px;
+    z-index: 2;
+
+    @mixin atSmall {
+      height: 2rem;
+      width: 2rem;
+      margin: 2rem 1rem;
+
+    }
 
     @mixin atMedium {
       display: none;
@@ -17,13 +30,21 @@
   }
 
   &__menu-content {
-    display: none;
+    opacity: 0;
+    transition: all .4s ease-out;
+    text-align: center;
+
     &--visible {
-      display: block;
+      opacity: 1;
+      background-color: $transparentBlue;
+      margin: 0 -18px;
+      padding-top: 89px;
     }
-    
+
     @mixin atMedium {
-      display: block;
+      opacity: 1;
+      margin: 0;
+      padding-top: 0;
     }
   }
 
@@ -43,21 +64,53 @@
   }
 
   &__btn {
-    float: right;
-    margin: 1rem 0;
+    margin: 1rem 0 0 0;
+
+    @mixin atMedium {
+      float: right;
+      margin: 1rem 0;
+    }
   }
 
   &__nav {
-    float: right;
+    @mixin atMedium {
+      float: right;
+    }
+
+    ul {
+      margin: 0;
+      padding: 16px 0;
+    }
 
     li {
-      float: left;
-      padding: .78rem 1.6rem 0 0;
+      padding: .78rem 1rem 0 0;
       list-style: none;
+      display: inline-block;
+      font-size: .9rem;
 
-      a {
-        text-decoration: none;
-        color: #fff;
+      @mixin atMedium {
+        float: left;
+        padding: .78rem 1.6rem 0 0;
+        font-size: 1rem;
+      }
+    }
+
+    li:last-child {
+      padding-right: 0;
+
+      @mixin atMedium {
+        padding-right: 1.6rem;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      color: #fff;
+      background-color: $darkTransparentBlue;
+      padding: .4rem;
+
+      @mixin atMedium {
+        background-color: transparent;
       }
     }
   }
