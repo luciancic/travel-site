@@ -1076,6 +1076,21 @@ a {
   background-color: rgba(47,85,114, 0.3);
 }
 
+.header__menu-icon {
+    height: 1.3rem;
+    width: 1.3rem;
+    background-color: #fff;
+    float: right;
+    margin: 1rem;
+  }
+
+@media (min-width: 800px) {
+
+.header__menu-icon {
+      display: none
+  }
+  }
+
 .header__menu-content {
     display: none;
   }

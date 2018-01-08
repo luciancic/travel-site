@@ -67,19 +67,21 @@
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
-const MobileMenu = __webpack_require__(1);
+"use strict";
 
+
+var MobileMenu = __webpack_require__(1);
 
 /***/ }),
 /* 1 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-const MobileMenu = function () {
-  
-};
+"use strict";
+
+
+var MobileMenu = function MobileMenu() {};
 
 module.exports = MobileMenu;
-
 
 /***/ })
 /******/ ]);

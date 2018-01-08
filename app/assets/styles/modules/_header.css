@@ -4,6 +4,18 @@
   z-index: 1;
   background-color: $transparentBlue;
 
+  &__menu-icon {
+    height: 1.3rem;
+    width: 1.3rem;
+    background-color: #fff;
+    float: right;
+    margin: 1rem;
+
+    @mixin atMedium {
+      display: none;
+    }
+  }
+
   &__menu-content {
     display: none;
 
