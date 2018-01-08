@@ -1,0 +1,50 @@
+.header__menu-icon {
+  height: 22px;
+  width: 24px;
+  float: right;
+  margin: 1.5rem .5rem;
+  position: absolute;
+  right: 18px;
+  z-index: 2;
+
+  @mixin atSmall {
+    height: 29px;
+    width: 32px;
+    margin: 2rem 1rem;
+  }
+
+  @mixin atMedium {
+    display: none;
+  }
+
+  &__top {
+    height: 2px;
+    margin-bottom: 8px;
+    background-color: #fff;
+
+    @mixin atSmall {
+      height: 3px;
+      margin-bottom: 11px;
+    }
+  }
+
+  &__middle {
+    height: 2px;
+    margin-bottom: 8px;
+    background-color: #fff;
+
+    @mixin atSmall {
+      height: 3px;
+      margin-bottom: 11px;
+    }
+  }
+
+  &__bottom {
+    height: 2px;
+    background-color: #fff;
+
+    @mixin atSmall {
+      height: 3px;
+    }
+  }
+}
