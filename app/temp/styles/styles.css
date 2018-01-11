@@ -1258,3 +1258,7 @@ a {
       -webkit-transform-origin: left;
               transform-origin: left;
     }
+
+.item-to-reveal {
+  /* Reveal code in scripts/modules/RevealOnScroll */
+}
