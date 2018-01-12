@@ -4,6 +4,7 @@
   z-index: 1;
 
   @mixin atMedium {
+    position: fixed;
     background-color: $transparentBlue;
   }
 

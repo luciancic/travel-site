@@ -1078,6 +1078,7 @@ a {
 @media (min-width: 800px) {
 
 .header {
+    position: fixed;
     background-color: rgba(47,85,114, 0.36)
 }
   }
