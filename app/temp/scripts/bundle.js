@@ -86,7 +86,7 @@ var ScrollReveal = __webpack_require__(2);
 console.log(ScrollReveal);
 window.sr = ScrollReveal();
 
-sr.reveal('.item-to-reveal', { duration: 700, easing: 'ease-out' });
+sr.reveal('.item-to-reveal', { duration: 700, easing: 'ease-out', delay: 250 });
 
 /***/ }),
 /* 2 */
