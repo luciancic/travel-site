@@ -2,7 +2,6 @@
   "name": "travel-site",
   "version": "1.0.0",
   "dependencies": {
-    "express": "^4.16.2",
     "jquery": "3.2.1",
     "jquery-smooth-scroll": "2.2.0",
     "lazysizes": "4.0.1",
@@ -37,9 +36,6 @@
     "postcss-nested": "2.1.2",
     "postcss-simple-vars": "4.1.0",
     "webpack": "3.8.1"
-  },
-  "scripts": {
-    "start": "node server.js"
   },
   "engines": {
     "node": "8.9.1"
