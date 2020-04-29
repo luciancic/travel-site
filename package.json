@@ -2,7 +2,7 @@
   "name": "travel-site",
   "version": "1.0.0",
   "dependencies": {
-    "jquery": "3.4.1",
+    "jquery": "3.5.0",
     "jquery-smooth-scroll": "2.2.0",
     "lazysizes": "5.1.0",
     "normalize.css": "8.0.1",
